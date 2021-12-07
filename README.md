@@ -17,7 +17,7 @@
 <img src ="https://user-images.githubusercontent.com/39574228/145118137-98145ecf-2c13-4bba-8344-1fe69cbc9ef6.png">
 </p>
 
-## JETPACK LIBRARIES USED - (Will be updated as more gets used)
+## FEATURES - (Will be updated as more jetpack lib. gets used)
 
 * Navigation Component
 * Hilt 
