@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/homeFragment">
+
+    <fragment
+        android:id="@+id/homeFragment"
+        android:name="com.ibrajix.jetpacker.ui.fragments.HomeFragment"
+        android:label="fragment_home"
+        tools:layout="@layout/fragment_home" >
+        <action
+            android:id="@+id/action_homeFragment_to_fundWalletFragment"
+            app:destination="@id/fundWalletFragment"
+            app:enterAnim="@android:anim/slide_in_left"
+            app:exitAnim="@android:anim/slide_out_right"
+            app:popEnterAnim="@android:anim/slide_in_left"
+            app:popExitAnim="@android:anim/slide_out_right" />
+        <action
+            android:id="@+id/action_homeFragment_to_selectSpaceCraftFragment"
+            app:destination="@id/selectSpaceCraftFragment"
+            app:enterAnim="@android:anim/slide_in_left"
+            app:exitAnim="@android:anim/slide_out_right"
+            app:popEnterAnim="@android:anim/slide_in_left"
+            app:popExitAnim="@android:anim/slide_out_right" />
+    </fragment>
+    <fragment
+        android:id="@+id/fundWalletFragment"
+        android:name="com.ibrajix.jetpacker.ui.fragments.FundWalletFragment"
+        android:label="fragment_fund_wallet"
+        tools:layout="@layout/fragment_fund_wallet" >
+        <action
+            android:id="@+id/action_fundWalletFragment_to_fundingSuccessFragment"
+            app:destination="@id/fundingSuccessFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/fundingSuccessFragment"
+        android:name="com.ibrajix.jetpacker.ui.fragments.FundingSuccessFragment"
+        android:label="fragment_funding_success"
+        tools:layout="@layout/fragment_funding_success" >
+        <action
+            android:id="@+id/action_fundingSuccessFragment_to_homeFragment"
+            app:destination="@id/homeFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/selectSpaceCraftFragment"
+        android:name="com.ibrajix.jetpacker.ui.fragments.SelectSpaceCraftFragment"
+        android:label="fragment_select_space_craft"
+        tools:layout="@layout/fragment_select_space_craft" >
+        <action
+            android:id="@+id/action_selectSpaceCraftFragment_to_selectDestinationFragment"
+            app:destination="@id/selectDestinationFragment" />
+        <action
+            android:id="@+id/action_selectSpaceCraftFragment_to_selectDestination2Fragment"
+            app:destination="@id/selectDestination2Fragment" />
+        <action
+            android:id="@+id/action_selectSpaceCraftFragment_to_fundWalletFragment"
+            app:destination="@id/fundWalletFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/selectDestinationFragment"
+        android:name="com.ibrajix.jetpacker.ui.fragments.SelectDestinationFragment"
+        android:label="fragment_select_destination"
+        tools:layout="@layout/fragment_select_destination" >
+        <action
+            android:id="@+id/action_selectDestinationFragment_to_tripDetailsFragment"
+            app:destination="@id/tripDetailsFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/selectDestination2Fragment"
+        android:name="com.ibrajix.jetpacker.ui.fragments.SelectDestination2Fragment"
+        android:label="fragment_select_destination2"
+        tools:layout="@layout/fragment_select_destination2" >
+        <action
+            android:id="@+id/action_selectDestination2Fragment_to_tripDetailsFragment"
+            app:destination="@id/tripDetailsFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/tripDetailsFragment"
+        android:name="com.ibrajix.jetpacker.ui.fragments.TripDetailsFragment"
+        android:label="fragment_trip_details"
+        tools:layout="@layout/fragment_trip_details" >
+        <action
+            android:id="@+id/action_tripDetailsFragment_to_enjoyRideFragment"
+            app:destination="@id/enjoyRideFragment" />
+        <argument
+            android:name="tripDetails"
+            app:argType="com.ibrajix.jetpacker.ui.model.TripDetails" />
+    </fragment>
+    <fragment
+        android:id="@+id/enjoyRideFragment"
+        android:name="com.ibrajix.jetpacker.ui.fragments.EnjoyRideFragment"
+        android:label="fragment_enjoy_ride"
+        tools:layout="@layout/fragment_enjoy_ride" />
+</navigation>

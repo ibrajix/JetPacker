@@ -1,0 +1,13 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Theme.JetPacker" parent="Theme.AppCompat.Light.NoActionBar">
+
+        <!--Status bar color-->
+        <item name="android:statusBarColor">@color/white</item>
+
+        <!--Font-->
+        <item name="android:fontFamily">@font/avenir_black</item>
+
+    </style>
+
+</resources>

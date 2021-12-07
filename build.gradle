@@ -1,0 +1,21 @@
+// Top-level build file where you can add configuration options common to all sub-projects/modules.
+buildscript {
+    repositories {
+        google()
+        mavenCentral()
+    }
+    dependencies {
+        classpath "com.android.tools.build:gradle:7.0.3"
+        classpath "org.jetbrains.kotlin:kotlin-gradle-plugin:1.5.31"
+
+        //safe-args - to pass data between screens
+        classpath "androidx.navigation:navigation-safe-args-gradle-plugin:2.3.5"
+
+        //hilt - dependency injection
+        classpath "com.google.dagger:hilt-android-gradle-plugin:2.39.1"
+    }
+}
+
+task clean(type: Delete) {
+    delete rootProject.buildDir
+}

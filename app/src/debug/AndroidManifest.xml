@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.ibrajix.jetpacker">
+
+    <application>
+       <activity
+           android:name="com.ibrajix.jetpacker.HiltTestActivity"
+           android:exported="false">
+       </activity>
+    </application>
+
+</manifest>
