@@ -24,7 +24,7 @@
 * DataBinding
 * DataStore
 * Hilt
-* Pagination
+* Constraint Layout
 * Test (Espresso, Junit etc)
 
 ## EXTERNAL LIBRARIES USED
