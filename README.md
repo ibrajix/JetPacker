@@ -36,6 +36,10 @@
 ![](https://media.giphy.com/media/BHvuvkkgM5BYgcwFzs/giphy.gif)
 
 
+## DOWNLOAD
+Navigate to <a href="https://github.com/ibrajix/JetPacker/releases">Releases</a> and download the latest apk
+
+
 # License
 
 ```xml
