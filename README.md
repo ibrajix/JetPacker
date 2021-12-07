@@ -23,7 +23,7 @@
 * Hilt 
 * DataBinding
 * DataStore
-* Hilt
+* Custom View
 * Constraint Layout
 * Test (Espresso, Junit etc)
 
