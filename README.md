@@ -26,6 +26,7 @@
 * Custom View
 * Constraint Layout
 * Test (Espresso, Junit etc)
+* ViewModel
 
 ## EXTERNAL LIBRARIES USED
 * Animation - https://github.com/daimajia/AndroidViewAnimations
